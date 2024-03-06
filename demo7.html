@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <img src="../g5.jpg" alt="" onclick="demo()" id="i1">
+        <img src="../g6.jpg" alt="" id="i">
+        <script>
+            function demo(){
+                var a = document.getElementById("i1")
+                var b = document.getElementById("i") 
+                var path1=a.src
+                var path2=b.src
+                a.src=path2
+                b.src=path1
+            }
+            setInterval(demo,500)
+        </script>
+    </body>
+</html>
